@@ -13,13 +13,13 @@
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
+    /* for gps-entity-place, you can specify an altitude using the y component of the position attribute */
     <a-scene
         vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
         
 	<a-camera gps-camera rotation-reader></a-camera>
-        // for gps-entity-place, you can specify an altitude using the y component of the position attribute
         <a-entity gltf-model="./assets/Windmill/Windmill4.glb" rotation="0 180 0" scale="1.00 1.00 1.00" gps-entity-place="longitude: -79.73315042628124; latitude: 43.536157355934876;" position="0 30 0" animation-mixer/>
     </a-scene>
 </body>
